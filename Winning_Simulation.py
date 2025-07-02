@@ -28,9 +28,9 @@ class Lottery_Machine():
         return False;
 
 Lottery_Machine=Lottery_Machine();
-draw=90;
+draw=500;
 log=[];
-print(len(log))
+
 for i in range(1,draw):
 
     number=random.randint(1, 1000);
@@ -38,5 +38,7 @@ for i in range(1,draw):
         log.append(i);
 
 print(log);
-print(draw/len(log));
+if(len(log)>0):
+    ex=draw/len(log)
+    print("%.3f"%ex)
        

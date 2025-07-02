@@ -25,7 +25,7 @@ for i in range(1,91):
 
     ex+=i*Probabilitylist[i-1];
 
-print(ex)
+print("%.3f"%ex)
     
 """
 米池期望值計算
